@@ -14,12 +14,12 @@ function fuckinFizzBuzz(num){
 fuckinFizzBuzz(num);
 
 //Checker Board
-let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+let array1 = [1, 2, 3, 4];
 let place = array1.length;
 for(i = 0; i <= place; i++){
   if (array1[i] % 2 === 0) {
-    console.log('# ');
+    console.log('# # # # ');
   } else {
-    console.log(' #');
+    console.log(' # # # #');
   }
 }
