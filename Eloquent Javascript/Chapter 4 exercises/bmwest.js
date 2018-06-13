@@ -26,12 +26,13 @@ sumRange(1,10);
 
 function stepRange(start, end, step = 1) {
 	let stepNumList = [];
+  let stepIsPositive = step > 0
 
-  for (i = start; step > 0 ? i <= end : i !== end; i += step) {
+  for (i = start; stepIsPositive ? i <= end : i !== end; i += step) {
   	stepNumList.push(i);
   }
 
- 	step < 0 ? stepNumList.push(end) : "";
+ 	stepIsPositive ? stepNumList.push(end) : "";
   console.log(stepNumList);
 }
 
@@ -45,7 +46,7 @@ function reverseArray(array) {
 	let reversed = [];
   let index = array.length;
 
-	for (i = 0; i <= array.length; i++ ) {
+	for (i = 0; i <= index; i++ ) {
     index --;
   	reversed.push(array[index]);
   }
